@@ -1,0 +1,17 @@
+@import "./mixins";
+
+@include font-face("Satoshi", "../fonts/satoshi-thin", 100);
+@include font-face("Satoshi", "../fonts/satoshi-regular", 300);
+@include font-face("Satoshi", "../fonts/satoshi-medium", 500);
+@include font-face("Satoshi", "../fonts/satoshi-bold", 700);
+@include font-face("Satoshi", "../fonts/satoshi-black", 900);
+
+p {
+  font-family: Satoshi, Arial, Helvetica, sans-serif;
+  font-weight: 100;
+}
+
+h1 {
+  font-family: Satoshi, Arial, Helvetica, sans-serif;
+  font-weight: 900;
+}
