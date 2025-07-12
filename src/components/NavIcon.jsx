@@ -1,11 +1,11 @@
 import style from "../styles/NavIcon.module.scss";
 import Icon from "./Icon";
 
-function NavIcon({ size, color, path }) {
+function NavIcon({ width, height, color, path }) {
   return (
     <>
       <main className={style.main}>
-        <Icon path={path} size={size} color={color} />
+        <Icon path={path} width={width} height={height} color={color} />
       </main>
     </>
   );

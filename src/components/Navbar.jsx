@@ -8,7 +8,12 @@ function Navbar() {
       <nav className={style.nav}>
         <main className={style.main}>
           <section className={style.section}>
-            <NavIcon path={primary_spotify_logo} size={32} color={"#ffffff"} />
+            <NavIcon
+              path={primary_spotify_logo}
+              width={32}
+              height={32}
+              color={"#ffffff"}
+            />
           </section>
         </main>
       </nav>
