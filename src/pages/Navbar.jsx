@@ -1,6 +1,6 @@
 import style from "../styles/Navbar.module.scss";
 import { primary_spotify_logo } from "../assets/svg";
-import NavIcon from "./NavIcon";
+import NavIcon from "../components/NavIcon";
 
 function Navbar() {
   return (
