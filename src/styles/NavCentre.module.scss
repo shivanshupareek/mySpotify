@@ -1,60 +1,59 @@
-@import "./mixins";
-@import "./global";
+// @import "./mixins";
+// @import "./global";
 
-.main {
-  .homeIcon {
-    background-color: #201f20;
-    border-radius: 50%;
-    padding: 12px;
-    margin: 8px;
-    width: 32px;
-    height: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
+// .main {
+//   .homeIcon {
+//     background-color: #201f20;
+//     border-radius: 50%;
+//     padding: 12px;
+//     margin: 8px;
+//     width: 32px;
+//     height: 32px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: relative;
 
-    &:hover {
-      scale: 1.05;
-      background-color: #2a2a2a;
-      cursor: pointer;
-    }
-  }
+//     &:hover {
+//       scale: 1.05;
+//       background-color: #2a2a2a;
+//       cursor: pointer;
 
-  .homeIcon:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
-  }
+//       .tooltip {
+//         visibility: visible;
+//         opacity: 1;
 
-  .homeIcon .tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-  }
+//         &::after {
+//           content: "";
+//           position: absolute;
+//           top: 100%;
+//           left: 50%;
+//         }
+//       }
+//     }
+//     .tooltip {
+//       background-color: #2a2a2a;
+//       color: #ffffff;
+//       padding: 16px 10px;
+//       border-radius: 4px;
+//       bottom: 125%;
+//       top: 110%;
+//       align-items: center;
+//       justify-content: center;
+//       display: flex;
+//       white-space: nowrap;
 
-  .tooltip {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    width: 3.5rem;
-    height: 2rem;
-    border-radius: 4px;
-    bottom: 125%;
-    top: 50%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+//       font-family: Satoshi, Arial, Helvetica, sans-serif;
+//       font-weight: 500;
+//       text-align: center;
+//       font-size: 14px;
+//       letter-spacing: 0.5px;
 
-    font-family: Satoshi, Arial, Helvetica, sans-serif;
-    font-weight: 300;
-    text-align: center;
-    font-size: 16px;
-    letter-spacing: 0.5px;
-
-    visibility: visible;
-    position: absolute;
-    z-index: 1;
-    opacity: 1;
-    transition: opacity 0.3;
-  }
-}
+//       visibility: hidden;
+//       position: absolute;
+//       z-index: 1;
+//       opacity: 0;
+//       transition: opacity 0.3;
+//     }
+//   }
+// }
