@@ -1,6 +1,7 @@
 import style from "../styles/Navbar.module.scss";
 import NavIcon from "../components/NavIcon";
 import NavCentre from "../components/NavCentre";
+import Searchbar from "../components/SearchBar";
 
 function Navbar() {
   return (
@@ -10,6 +11,7 @@ function Navbar() {
           <section className={style.section}>
             <NavIcon />
             <NavCentre />
+            <Searchbar />
           </section>
         </main>
       </nav>
