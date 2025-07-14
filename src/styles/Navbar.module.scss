@@ -1,7 +1,11 @@
 .nav {
   padding: 8px;
   margin: -8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  .main {
+    .section {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
 }

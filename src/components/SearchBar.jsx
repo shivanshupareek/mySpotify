@@ -16,7 +16,7 @@ function Searchbar() {
         />
         <div className={style.searchIcon}>
           <Tooltip label="Search">
-            <Icon path={search} width={22} height={22} color="#ffffff" />
+            <Icon path={search} width={22} height={22} color="#B3B3B3" />
           </Tooltip>
         </div>
         <div className={style.divider}>
@@ -24,7 +24,7 @@ function Searchbar() {
         </div>
         <div className={style.browseIcon}>
           <Tooltip label="Browse">
-            <Icon path={browse} width={24} height={24} color="#ffffff" />
+            <Icon path={browse} width={24} height={24} color="#B3B3B3" />
           </Tooltip>
         </div>
       </main>
