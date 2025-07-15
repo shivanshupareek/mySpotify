@@ -14,7 +14,7 @@ function NavEnd() {
           <p className={style.installText}>Install app</p>
         </div>
         <div className={style.notifyIcon}>
-          <Tooltip label="Notify">
+          <Tooltip label="What's new">
             <Icon path={notify} width={16} height={16} color="#B3B3B3" />
           </Tooltip>
         </div>
@@ -30,7 +30,7 @@ function NavEnd() {
         </div>
         <div className={style.accountIcon}>
           <Tooltip label="Account">
-            <Icon path={account} width={32} height={32} color="#ffffff" />
+            <Icon path={account} width={24} height={24} color="#ffffff" />
           </Tooltip>
         </div>
       </main>
