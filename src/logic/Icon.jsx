@@ -1,6 +1,6 @@
 import style from "../styles/Icon.module.scss";
 
-function Icon({ width = 24, height = 24, color = "ffffff", path, ...props }) {
+function Icon({ width = 24, height = 24, color = "#ffffff", path, ...props }) {
   return (
     <>
       <main className={style.main}>

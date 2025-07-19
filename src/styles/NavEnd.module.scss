@@ -7,11 +7,22 @@
   justify-content: center;
   gap: 2.5rem;
 
+  &:hover {
+    cursor: pointer;
+  }
+
   .downloadIcon {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+
+    .download {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
 
     .installText {
       font-family: Satoshi, Arial, Helvetica, sans-serif;

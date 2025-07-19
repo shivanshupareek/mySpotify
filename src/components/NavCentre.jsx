@@ -1,7 +1,7 @@
 import style from "../styles/NavCentre.module.scss";
-import Icon from "./Icon";
+import Tooltip from "../logic/Tooltip";
+import Icon from "../logic/Icon";
 import { home } from "../assets/svg";
-import Tooltip from "./Tooltip";
 import Searchbar from "../components/SearchBar";
 
 function NavCentre() {

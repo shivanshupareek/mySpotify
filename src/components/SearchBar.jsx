@@ -1,6 +1,6 @@
 import style from "../styles/SearchBar.module.scss";
-import Icon from "./Icon";
-import Tooltip from "./Tooltip";
+import Tooltip from "../logic/Tooltip";
+import Icon from "../logic/Icon";
 import { search, browse } from "../assets/svg";
 
 function Searchbar() {
