@@ -10,8 +10,41 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
+  width: 32rem;
+  height: 3rem;
+  margin: 0 auto;
+  position: relative;
+}
+.main .input {
   width: 100%;
-  max-width: 400px;
+  height: 100%;
+  background-color: #1f1f1f;
+  border: none;
+  outline: none;
+  border-radius: 1.5rem;
+  padding-left: 3.25rem;
+}
+.main .input:hover {
+  background-color: #2a2a2a;
+  border: 1px solid #403F3F;
+}
+.main .input::placeholder {
+  font-family: "Satoshi", Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  color: #b3b3b3;
+}
+.main .input:focus {
+  border: 2px solid #ffffff;
+}
+.main .searchIcon {
+  transform: translateX(-1050%) translateY(5%);
+  position: absolute;
+}
+.main .divider {
+  position: absolute;
+  transform: translateX(-100%);
 }
 
 /*# sourceMappingURL=SearchBar.module.css.map */

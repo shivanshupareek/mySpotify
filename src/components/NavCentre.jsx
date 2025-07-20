@@ -19,7 +19,7 @@ function NavCentre() {
           <Searchbar />
         </div>
 
-        <section className={style.search}></section>
+        {/*<section className={style.search}></section>*/}
       </main>
     </>
   );

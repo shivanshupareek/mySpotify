@@ -2,6 +2,7 @@
 
 .navCentreMain {
   @include global.flex-center(flex, center, center, row);
+  gap: 0.35rem;
 
 
   .homeIcon {
