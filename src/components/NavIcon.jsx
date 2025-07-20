@@ -1,5 +1,4 @@
 import style from "../styles/NavIcon.module.scss";
-// import Tooltip from "../logic/Tooltip";
 import Icon from "../logic/Icon";
 import { primary_spotify_logo } from "../assets/svg";
 
