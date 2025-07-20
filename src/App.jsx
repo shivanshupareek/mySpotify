@@ -1,5 +1,5 @@
 import style from "./styles/App.module.scss";
-import "./styles/_global.scss";
+import "./styles/partials/_global.scss";
 import Navbar from "./layouts/Navbar";
 
 function App() {

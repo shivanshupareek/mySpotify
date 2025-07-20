@@ -1,4 +1,4 @@
-@import "./mixins";
+@import "mixins";
 
 @include font-face("Satoshi", "../fonts/satoshi-thin", 100);
 @include font-face("Satoshi", "../fonts/satoshi-regular", 300);
