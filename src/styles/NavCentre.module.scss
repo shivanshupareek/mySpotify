@@ -1,11 +1,10 @@
-@use "./partials/global" as *;
+@use "./partials/global";
 
 .navCentreMain {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include global.flex-center(flex, center, center, row);
+
 
   .homeIcon {
-    @include icon-bg;
+    @include global.icon-bg;
   }
 }

@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("SatoshiVariable-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.nav {
+  padding: 8px;
+  margin: -8px;
+}
+.nav .main .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+/*# sourceMappingURL=Navbar.module.css.map */

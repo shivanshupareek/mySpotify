@@ -1,9 +1,7 @@
-@use "./partials/global" as *;
+@use "./partials/global";
 
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include global.flex-center(flex, center, center, row);
   position: relative;
 
   &:hover {
@@ -29,16 +27,11 @@
     border-radius: 4px;
     bottom: 125%;
     top: 110%;
-    align-items: center;
-    justify-content: center;
-    display: flex;
     white-space: nowrap;
 
-    font-family: "Satoshi", Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    @include global.flex-center(flex, center, center, row);
+    @include global.font(400, 14);
     text-align: center;
-    font-size: 14px;
-    letter-spacing: 0.5px;
 
     visibility: hidden;
     position: absolute;

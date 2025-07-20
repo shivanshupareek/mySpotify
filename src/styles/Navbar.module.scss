@@ -5,9 +5,7 @@
   margin: -8px;
   .main {
     .section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @include global.flex-center(flex, center, space-between, row);
     }
   }
 }

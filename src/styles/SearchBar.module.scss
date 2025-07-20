@@ -1,9 +1,7 @@
 @use "./partials/global";
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include global.flex-center(flex, center, center, row);
   width: 100%;
   max-width: 400px;
 }
