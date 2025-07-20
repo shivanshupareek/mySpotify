@@ -1,56 +1,17 @@
-@font-face {
-  font-family: "Satoshi Variable";
-  src: url("SatoshiVariable-Bold.woff2") format("woff2");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1.5rem;
-}
-.main:hover {
-  cursor: pointer;
-}
-.main .downloadIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-.main .downloadIcon .download {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-.main .downloadIcon .installText {
-  font-family: "Satoshi", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  color: #b3b3b3;
-}
-.main .notifyIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 4px;
-}
-.main .accountIcon {
-  background-color: #201f20;
-  border-radius: 50%;
-  padding: 12px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main .accountIcon:hover {
-  scale: 1.05;
-  background-color: #2a2a2a;
-  cursor: pointer;
-}
+/* Error: Undefined mixin.
+ *   ,
+ * 4 |   @include flex-center(row);
+ *   |   ^^^^^^^^^^^^^^^^^^^^^^^^^
+ *   '
+ *   NavEnd.module.scss 4:3  root stylesheet */
 
-/*# sourceMappingURL=NavEnd.module.css.map */
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Undefined mixin.\a   \2577 \a 4 \2502    @include flex-center(row);\a   \2502    ^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   NavEnd.module.scss 4:3  root stylesheet";
+}

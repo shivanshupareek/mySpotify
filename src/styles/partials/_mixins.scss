@@ -1,8 +1,24 @@
-@mixin font-face($font-family, $font-path, $weight: normal, $style: normal) {
-  @font-face {
-    font-family: $font-family;
-    src: url("#{$font-path}.ttf") format("truetype");
-    font-weight: $weight;
-    font-style: $style;
+
+@mixin icon-bg {
+  background-color: #201f20;
+  border-radius: 50%;
+  padding: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    scale: 1.05;
+    background-color: #2a2a2a;
+    cursor: pointer;
   }
+}
+
+@mixin flex-center ($direction: column) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
 }

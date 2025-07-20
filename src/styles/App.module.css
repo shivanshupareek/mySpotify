@@ -5,6 +5,10 @@
   font-style: normal;
   font-display: swap;
 }
+.test-check {
+  background-color: red;
+}
+
 :root {
   background-color: black;
   color: aliceblue;

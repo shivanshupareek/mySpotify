@@ -7,7 +7,7 @@ import Searchbar from "../components/SearchBar";
 function NavCentre() {
   return (
     <>
-      <main className={style.main}>
+      <main className={style.navCentreMain}>
         <div className={style.homeIcon}>
           <Tooltip label="Home">
             <div className={style.homeIcon}>

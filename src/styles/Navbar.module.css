@@ -5,6 +5,10 @@
   font-style: normal;
   font-display: swap;
 }
+.test-check {
+  background-color: red;
+}
+
 .nav {
   padding: 8px;
   margin: -8px;

@@ -1,9 +1,8 @@
-@use "partials/global";
+@use "partials/global" as *;
 
 .main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center(row);
+  @extend .test-check;
   gap: 1.5rem;
 
   &:hover {
@@ -38,19 +37,6 @@
   }
 
   .accountIcon {
-    background-color: #201f20;
-    border-radius: 50%;
-    padding: 12px;
-    width: 24px;
-    height: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover {
-      scale: 1.05;
-      background-color: #2a2a2a;
-      cursor: pointer;
-    }
+    @include icon-bg;
   }
 }

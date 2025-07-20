@@ -5,6 +5,10 @@
   font-style: normal;
   font-display: swap;
 }
+.test-check {
+  background-color: red;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -45,7 +49,7 @@
   position: absolute;
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.3;
+  transition: opacity 0.3s;
 }
 
 /*# sourceMappingURL=Tooltip.module.css.map */

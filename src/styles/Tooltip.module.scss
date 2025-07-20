@@ -1,4 +1,4 @@
-@use "partials/global";
+@use "partials/global" as *;
 
 .wrapper {
   display: flex;
@@ -44,6 +44,6 @@
     position: absolute;
     z-index: 1;
     opacity: 0;
-    transition: opacity 0.3;
+    transition: opacity 0.3s;
   }
 }
