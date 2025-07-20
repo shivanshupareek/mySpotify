@@ -1,5 +1,4 @@
-@import "partials/mixins";
-@import "partials/global";
+@use "partials/global";
 
 .main {
   display: flex;

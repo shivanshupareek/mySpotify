@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("SatoshiVariable-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  background-color: black;
+  color: aliceblue;
+}
+
+/*# sourceMappingURL=App.module.css.map */
