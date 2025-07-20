@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 1.5rem;
 
   &:hover {
     cursor: pointer;
@@ -29,6 +29,13 @@
       font-weight: 500;
       color: #b3b3b3;
     }
+  }
+
+  .notifyIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
   }
 
   .accountIcon {

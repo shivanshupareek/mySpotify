@@ -17,7 +17,7 @@ function NavEnd() {
         </div>
         <div className={style.notifyIcon}>
           <Tooltip label="What's new">
-            <Icon path={notify} width={16} height={16} color="#B3B3B3" />
+            <Icon path={notify} width={24} height={24} color="#B3B3B3" />
           </Tooltip>
         </div>
         <div className={style.activityIcon}>
