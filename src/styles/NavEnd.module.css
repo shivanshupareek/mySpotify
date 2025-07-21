@@ -20,7 +20,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 0.5rem;
 }
 .main .downloadIcon .download {
   display: flex;
@@ -31,8 +30,8 @@
 }
 .main .downloadIcon .installText {
   font-family: "Satoshi", Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  font-size: 16;
+  font-weight: 500;
+  font-size: 12;
   letter-spacing: 0.5px;
   color: #b3b3b3;
 }
@@ -42,6 +41,18 @@
   justify-content: center;
   flex-direction: row;
   padding-top: 4px;
+}
+.main .notifyIcon .notifyTooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.main .notifyIcon .notifySvg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 .main .accountIcon {
   background-color: #201f20;

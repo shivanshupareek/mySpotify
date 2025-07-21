@@ -10,7 +10,6 @@
 
   .downloadIcon {
     @include global.flex-center(flex, center, center, row);
-    gap: 0.5rem;
 
     .download {
       @include global.flex-center(flex, center, center, row);
@@ -18,7 +17,7 @@
     }
 
     .installText {
-      @include global.font($weight: 400);
+      @include global.font(500, 12);
       color: #b3b3b3;
     }
   }
@@ -26,6 +25,14 @@
   .notifyIcon {
     @include global.flex-center(flex, center, center, row);
     padding-top: 4px;
+
+    .notifyTooltip {
+      @include global.flex-center(flex, center, center, row);
+    }
+
+    .notifySvg {
+      @include global.flex-center(flex, center, center, row);
+    }
   }
 
   .accountIcon {
