@@ -16,10 +16,8 @@ function NavEnd() {
           </Tooltip>
         </div>
         <div className={style.notifyIcon}>
-          <Tooltip label="What's new" classname={style.notifyTooltip}>
-              <div className={style.notifySvg}>
-            <Icon path={notify} width={24} height={24} color="#B3B3B3" />
-              </div>
+          <Tooltip label="What's new">
+            <Icon path={notify} width={30} height={32} color="#B3B3B3" />
           </Tooltip>
         </div>
         <div className={style.activityIcon}>

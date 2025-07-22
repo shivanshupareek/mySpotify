@@ -5,5 +5,11 @@
   font-style: normal;
   font-display: swap;
 }
+.main .icon .iconPath {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
 /*# sourceMappingURL=Icon.module.css.map */

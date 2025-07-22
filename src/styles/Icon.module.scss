@@ -1,5 +1,9 @@
 @use "./partials/global";
 
 .main {
-
+ .icon {
+   .iconPath {
+     @include global.flex-center(flex, center, center, row)
+   }
+ }
 }

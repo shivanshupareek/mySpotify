@@ -25,15 +25,9 @@
   .notifyIcon {
     @include global.flex-center(flex, center, center, row);
     padding-top: 4px;
-
-    .notifyTooltip {
-      @include global.flex-center(flex, center, center, row);
-    }
-
-    .notifySvg {
-      @include global.flex-center(flex, center, center, row);
-    }
   }
+
+  .activityIcon {}
 
   .accountIcon {
     @include global.icon-bg;
