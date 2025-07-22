@@ -10,22 +10,22 @@ function NavEnd() {
         <div className={style.downloadIcon}>
           <Tooltip label="Install app">
             <div className={style.download}>
-              <Icon path={download} width={16} height={16} color="#B3B3B3" />
+              <Icon path={download} width={14} height={14} color="#B3B3B3" />
               <p className={style.installText}>Install app</p>
             </div>
           </Tooltip>
         </div>
         <div className={style.notifyIcon}>
           <Tooltip label="What's new">
-            <Icon path={notify} width={30} height={32} color="#B3B3B3" />
+            <Icon path={notify} width={18} height={20} color="#B3B3B3" />
           </Tooltip>
         </div>
         <div className={style.activityIcon}>
           <Tooltip label="Friend Activity">
             <Icon
               path={friend_activity}
-              width={24}
-              height={17}
+              width={22}
+              height={15}
               color="#B3B3B3"
             />
           </Tooltip>

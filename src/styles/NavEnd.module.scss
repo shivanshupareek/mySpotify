@@ -14,17 +14,17 @@
     .download {
       @include global.flex-center(flex, center, center, row);
       gap: 0.5rem;
-    }
+      padding-bottom: 8px;
 
-    .installText {
-      @include global.font(500, 12);
-      color: #b3b3b3;
+      .installText {
+        @include global.font(500, 14px);
+        color: #b3b3b3;
+      }
     }
   }
 
   .notifyIcon {
     @include global.flex-center(flex, center, center, row);
-    padding-top: 4px;
   }
 
   .activityIcon {}

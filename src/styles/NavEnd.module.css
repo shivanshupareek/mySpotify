@@ -27,11 +27,12 @@
   justify-content: center;
   flex-direction: row;
   gap: 0.5rem;
+  padding-bottom: 8px;
 }
-.main .downloadIcon .installText {
+.main .downloadIcon .download .installText {
   font-family: "Satoshi", Arial, Helvetica, sans-serif;
   font-weight: 500;
-  font-size: 12;
+  font-size: 14px;
   letter-spacing: 0.5px;
   color: #b3b3b3;
 }
@@ -40,7 +41,6 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  padding-top: 4px;
 }
 .main .accountIcon {
   background-color: #201f20;
