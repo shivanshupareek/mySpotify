@@ -15,5 +15,8 @@
   width: 64px;
   height: 64px;
 }
+.main:hover {
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=NavIcon.module.css.map */
