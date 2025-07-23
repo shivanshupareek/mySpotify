@@ -37,5 +37,4 @@ function Icon({ width = 24, height = 24, color = "#ffffff", path, ...props }) {
     </>
   );
 }
-
 export default Icon;

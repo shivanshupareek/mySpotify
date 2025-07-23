@@ -12,6 +12,7 @@
   flex-direction: row;
   gap: 0.35rem;
   position: absolute;
+  left: 33%;
 }
 .navCentreMain .homeIcon {
   background-color: #201f20;

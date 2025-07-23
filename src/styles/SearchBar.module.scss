@@ -14,10 +14,6 @@
     border-radius: 1.5rem;
   }
 
-  &:focus{
-    border: 2px solid #ffffff;
-  }
-
   .input {
     width: 100%;
     height: 100%;
@@ -27,9 +23,17 @@
     border-radius: 1.5rem;
     padding-left: 3.25rem;
 
+    @include global.font(400, 16px);
+    color: #ffffff;
+    letter-spacing: 0.5px;
+
     &::placeholder {
       @include global.font(400, 16px);
       color: #b3b3b3;
+    }
+
+    &:focus{
+      border: 2px solid #ffffff;
     }
   }
 
@@ -39,13 +43,6 @@
     transform: translateX(-50%) translateY(5%);
     position: absolute;
   }
-
-  //.dividerIcon {
-  //  position: absolute;
-  //  left: 85%;
-  //  transform: translateX(-50%);
-  //  color: #b3b3b3;
-  //}
 
   .browseIcon {
     position: absolute;

@@ -1,7 +1,7 @@
 import style from "../styles/SearchBar.module.scss";
 import Tooltip from "../logic/Tooltip";
 import Icon from "../logic/Icon";
-import { search, browse, divider } from "../assets/svg";
+import { search, browse } from "../assets/svg";
 
 function Searchbar() {
   return (
@@ -19,9 +19,6 @@ function Searchbar() {
             <Icon path={search} width={22} height={22} color="#B3B3B3" />
           </Tooltip>
         </div>
-        {/*<div className={style.dividerIcon}>*/}
-        {/*  <Icon path={divider} width={2} height={42} color="#B3B3B3" />*/}
-        {/*</div>*/}
 
         <div className={style.browseIcon}>
           <Tooltip label="Browse">

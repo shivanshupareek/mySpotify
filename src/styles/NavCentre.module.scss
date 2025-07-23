@@ -4,10 +4,12 @@
   @include global.flex-center(flex, center, center, row);
   gap: 0.35rem;
   position: absolute;
-  //left: 30%;
+  left: 33%;
 
 
   .homeIcon {
     @include global.icon-bg;
   }
+
+  .searchbar{}
 }
