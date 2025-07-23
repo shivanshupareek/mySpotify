@@ -10,10 +10,19 @@
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  width: 32rem;
+  width: 28rem;
   height: 3rem;
   margin: 0 auto;
   position: relative;
+}
+.main:hover {
+  background-color: #2a2a2a;
+  border: 1px solid #403F3F;
+  cursor: pointer;
+  border-radius: 1.5rem;
+}
+.main:focus {
+  border: 2px solid #ffffff;
 }
 .main .input {
   width: 100%;
@@ -24,10 +33,6 @@
   border-radius: 1.5rem;
   padding-left: 3.25rem;
 }
-.main .input:hover {
-  background-color: #2a2a2a;
-  border: 1px solid #403F3F;
-}
 .main .input::placeholder {
   font-family: "Satoshi", Arial, Helvetica, sans-serif;
   font-weight: 400;
@@ -35,16 +40,18 @@
   letter-spacing: 0.5px;
   color: #b3b3b3;
 }
-.main .input:focus {
-  border: 2px solid #ffffff;
-}
 .main .searchIcon {
-  transform: translateX(-1050%) translateY(5%);
+  top: 23%;
+  left: 6%;
+  transform: translateX(-50%) translateY(5%);
   position: absolute;
 }
-.main .divider {
+.main .browseIcon {
   position: absolute;
-  transform: translateX(-100%);
+  left: 83%;
+  transform: translateX(50%);
+  padding-left: 1rem;
+  border-left: 1px solid #7d7c7c;
 }
 
 /*# sourceMappingURL=SearchBar.module.css.map */

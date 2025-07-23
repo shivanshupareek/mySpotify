@@ -2,10 +2,21 @@
 
 .main {
   @include global.flex-center(flex, center, center, row);
-  width: 32rem;
+  width: 28rem;
   height: 3rem;
   margin: 0 auto;
   position: relative;
+
+  &:hover {
+    background-color: #2a2a2a;
+    border: 1px solid #403F3F;
+    cursor: pointer;
+    border-radius: 1.5rem;
+  }
+
+  &:focus{
+    border: 2px solid #ffffff;
+  }
 
   .input {
     width: 100%;
@@ -15,26 +26,32 @@
     outline: none;
     border-radius: 1.5rem;
     padding-left: 3.25rem;
-     &:hover {
-       background-color: #2a2a2a;
-       border: 1px solid #403F3F;
-     }
+
     &::placeholder {
       @include global.font(400, 16px);
       color: #b3b3b3;
     }
-    &:focus{
-      border: 2px solid #ffffff;
-    }
   }
 
   .searchIcon {
-    transform: translateX(-1050%) translateY(5%);
+    top: 23%;
+    left: 6%;
+    transform: translateX(-50%) translateY(5%);
     position: absolute;
   }
 
-  .divider {
+  //.dividerIcon {
+  //  position: absolute;
+  //  left: 85%;
+  //  transform: translateX(-50%);
+  //  color: #b3b3b3;
+  //}
+
+  .browseIcon {
     position: absolute;
-    transform: translateX(-100%);
+    left: 83%;
+    transform: translateX(50%);
+    padding-left: 1rem;
+    border-left: 01px solid #7d7c7c;
   }
 }
