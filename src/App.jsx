@@ -9,10 +9,22 @@ function App() {
   return (
     <>
       <main className={style.main}>
-          <Navbar />
-          <Library />
-          <View />
-          <Playbar />
+          <div className={style.navbar}>
+              <Navbar />
+          </div>
+
+          <div className={style.library}>
+             <Library />
+          </div>
+
+          <div className={style.view}>
+            <View />
+          </div>
+
+          <div className={style.playbar}>
+            <Playbar />
+          </div>
+
       </main>
     </>
   );

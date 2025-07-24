@@ -1,5 +1,34 @@
-@import "./partials/global";
+@use "./partials/global";
 
-.playbar_main{
-  .div_main{}
+.playbar_main {
+  width: 100%;
+  height: 6rem;
+  border: 1px solid #ffffff;
+
+  .div_main{
+    @include global.flex-center(flex, center, center, row);
+    width: 100%;
+    height: 100%;
+
+    .music_player{
+      width: 33%;
+      height: 100%;
+      border: 1px solid #ffffff;
+
+    }
+    .music_controls{
+      width: 34%;
+      height: 100%;
+      border: 1px solid #ffffff;
+
+      .control{}
+      .progressbar{}
+    }
+    .music_extras{
+      width: 33%;
+      height: 100%;
+      border: 1px solid #ffffff;
+
+    }
+  }
 };

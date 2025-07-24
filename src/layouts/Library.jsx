@@ -1,4 +1,4 @@
-import style from "./Library.module.scss";
+import style from "../styles/Library.module.scss";
 
 function Library() {
     return (

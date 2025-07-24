@@ -5,5 +5,33 @@
   font-style: normal;
   font-display: swap;
 }
+.playbar_main {
+  width: 100%;
+  height: 6rem;
+  border: 1px solid #ffffff;
+}
+.playbar_main .div_main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+.playbar_main .div_main .music_player {
+  width: 33%;
+  height: 100%;
+  border: 1px solid #ffffff;
+}
+.playbar_main .div_main .music_controls {
+  width: 34%;
+  height: 100%;
+  border: 1px solid #ffffff;
+}
+.playbar_main .div_main .music_extras {
+  width: 33%;
+  height: 100%;
+  border: 1px solid #ffffff;
+}
 
 /*# sourceMappingURL=Playbar.module.css.map */
