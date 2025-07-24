@@ -21,7 +21,20 @@
       height: 100%;
       border: 1px solid #ffffff;
 
-      .control{}
+      .controls{
+        @include global.flex-center(flex, center, center, row);
+        gap: 1.5rem;
+        padding-top: 1rem;
+
+        .shuffle{}
+        .previous{}
+        .playPause{
+          .play{}
+          .pause{}
+        }
+        .next{}
+        .repeat{}
+      }
       .progressbar{}
     }
     .music_extras{

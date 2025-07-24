@@ -28,6 +28,14 @@
   height: 100%;
   border: 1px solid #ffffff;
 }
+.playbar_main .div_main .music_controls .controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
 .playbar_main .div_main .music_extras {
   width: 33%;
   height: 100%;
