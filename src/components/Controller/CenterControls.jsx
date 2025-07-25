@@ -17,8 +17,8 @@ function CenterControls() {
                         className={play ? "play" : "pause"}
                         label={play ? "Controller" : "Pause"}
                         path={play ? playbar_controls_play : playbar_controls_pause}
-                        width={32}
-                        height={32}
+                        width={36}
+                        height={36}
                         hColor={"#ffffff"}
                         color={"#b3b3b3"}
                     />

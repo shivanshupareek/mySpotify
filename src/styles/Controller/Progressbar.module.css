@@ -5,5 +5,63 @@
   font-style: normal;
   font-display: swap;
 }
+.pbContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.pbContainer .timeOver, .pbContainer .timeLeft {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-bottom: 8px;
+}
+.pbContainer .timeOver p, .pbContainer .timeLeft p {
+  color: #4d4d4c;
+}
+.pbContainer .progressbar {
+  height: 100%;
+  width: 100%;
+}
+.pbContainer .progressbarBg {
+  width: 100%;
+  height: 4px;
+  margin-top: 1.25rem;
+  background-color: #4d4d4c;
+  border-radius: 3rem;
+  position: relative;
+}
+.pbContainer .progressbarBg:hover {
+  cursor: pointer;
+}
+.pbContainer .progressbarBg:hover .progressbarFilled {
+  background-color: #1BD660;
+}
+.pbContainer .progressbarBg:hover .progressbarThumb {
+  visibility: visible;
+}
+.pbContainer .progressbarBg .progressbarFilled {
+  width: 25%;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 3rem;
+}
+.pbContainer .progressbarBg .progressbarThumb {
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: white;
+  visibility: hidden;
+  top: 50%;
+  left: 24%;
+  transform: translate(-50%, -50%);
+}
 
 /*# sourceMappingURL=Progressbar.module.css.map */

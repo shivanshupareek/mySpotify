@@ -10,8 +10,12 @@ function Playbar() {
                 <div className={style.div_main}>
                     <div className={style.music_player}></div>
                     <div className={style.music_controls}>
-                        <CenterControls />
-                        <Progressbar />
+                        <div className={style.centerControls}>
+                            <CenterControls />
+                        </div>
+                        <div className={style.progressbar}>
+                            <Progressbar />
+                        </div>
                     </div>
                     <div className={style.music_extras}></div>
                 </div>
