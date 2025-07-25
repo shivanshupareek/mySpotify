@@ -1,4 +1,4 @@
-import style from '../styles/Footer/Playbar.module.scss';
+import style from '../styles/Controller/Playbar.module.scss';
 import {shuffle,previous, next, playbar_controls_play, playbar_controls_pause, repeat} from "../assets/svg.js";
 import {useState} from "react";
 import IconFunction from "../logic/IconFunction.jsx";
@@ -19,7 +19,7 @@ function Playbar() {
                             <div className={style.playPause} onClick={() => {setPlay(prev => !prev)}}>
                                 <IconFunction
                                     className={play ? "play" : "pause"}
-                                    label={play ? "Footer" : "Pause"}
+                                    label={play ? "Controller" : "Pause"}
                                     path={play ? playbar_controls_play : playbar_controls_pause}
                                     width={32}
                                     height={32}
