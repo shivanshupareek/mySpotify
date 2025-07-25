@@ -11,7 +11,7 @@ function IconFunction({
                           hColor,
                           color,
                           onClick,
-                          className
+                          className,
                         }) {
 
     const [isHover, setIsHover] = useState(false);
@@ -29,7 +29,7 @@ function IconFunction({
                         path={path}
                         width={width}
                         height={height}
-                        color={isHover ? {hColor} : color}
+                        color={isHover ? hColor : color}
                     />
                 </Tooltip>
             </div>
