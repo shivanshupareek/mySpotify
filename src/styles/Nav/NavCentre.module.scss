@@ -1,4 +1,4 @@
-@use "./partials/global";
+@use "../partials/global";
 
 .navCentreMain {
   @include global.flex-center(flex, center, center, row);

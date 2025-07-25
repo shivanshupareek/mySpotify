@@ -1,4 +1,4 @@
-import style from "../styles/Tooltip.module.scss";
+import style from "../styles/Logic/Tooltip.module.scss";
 
 function Tooltip({ label, children }) {
   return (

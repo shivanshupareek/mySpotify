@@ -1,7 +1,7 @@
-import style from "../styles/Navbar.module.scss";
-import NavIcon from "../components/NavIcon";
-import NavCentre from "../components/NavCentre";
-import NavEnd from "../components/NavEnd";
+import style from "../styles/Nav/Navbar.module.scss";
+import NavIcon from "../components/Nav/NavIcon.jsx";
+import NavCentre from "../components/Nav/NavCentre.jsx";
+import NavEnd from "../components/Nav/NavEnd.jsx";
 
 function Navbar() {
   return (

@@ -1,8 +1,8 @@
-import style from "../styles/NavCentre.module.scss";
-import Tooltip from "../logic/Tooltip";
-import Icon from "../logic/Icon";
-import { home } from "../assets/svg";
-import Searchbar from "../components/SearchBar";
+import style from "../../styles/Nav/NavCentre.module.scss";
+import Tooltip from "../../logic/Tooltip.jsx";
+import Icon from "../../logic/Icon.jsx";
+import { home } from "../../assets/svg.js";
+import Searchbar from "./SearchBar.jsx";
 
 function NavCentre() {
   return (

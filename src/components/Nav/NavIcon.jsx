@@ -1,6 +1,6 @@
-import style from "../styles/NavIcon.module.scss";
-import Icon from "../logic/Icon";
-import { primary_spotify_logo } from "../assets/svg";
+import style from "../../styles/Nav/NavIcon.module.scss";
+import Icon from "../../logic/Icon.jsx";
+import { primary_spotify_logo } from "../../assets/svg.js";
 
 function NavIcon() {
   return (

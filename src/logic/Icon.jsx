@@ -1,4 +1,4 @@
-import style from "../styles/Icon.module.scss";
+import style from "../styles/Logic/Icon.module.scss";
 import {useRef, useEffect, useState} from "react";
 
 function Icon({ width = 24, height = 24, color = "#ffffff", path, ...props }) {

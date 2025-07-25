@@ -1,4 +1,4 @@
-import style from "../styles/View.module.scss";
+import style from "../styles/View/View.module.scss";
 
 function View () {
     return (

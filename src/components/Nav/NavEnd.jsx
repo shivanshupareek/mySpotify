@@ -1,9 +1,9 @@
-import style from "../styles/NavEnd.module.scss";
-import Tooltip from "../logic/Tooltip";
-import Icon from "../logic/Icon";
-import { download, notify, friend_activity, account } from "../assets/svg";
+import style from "../../styles/Nav/NavEnd.module.scss";
+import Tooltip from "../../logic/Tooltip.jsx";
+import Icon from "../../logic/Icon.jsx";
+import { download, notify, friend_activity, account } from "../../assets/svg.js";
 import {useState} from "react";
-import IconFunction from "../logic/IconFunction.jsx";
+import IconFunction from "../../logic/IconFunction.jsx";
 
 function NavEnd() {
   const [onInstallHover, setOnInstallHover] = useState(false);

@@ -1,4 +1,4 @@
-import style from  "../styles/IconFunction.module.scss"
+import style from "../styles/Logic/IconFunction.module.scss"
 import {useState} from "react";
 import Icon from "./Icon.jsx";
 import Tooltip from "./Tooltip.jsx";

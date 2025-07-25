@@ -1,7 +1,7 @@
-import style from "../styles/SearchBar.module.scss";
-import Tooltip from "../logic/Tooltip";
-import Icon from "../logic/Icon";
-import { search, browse } from "../assets/svg";
+import style from "../../styles/Nav/SearchBar.module.scss";
+import Tooltip from "../../logic/Tooltip.jsx";
+import Icon from "../../logic/Icon.jsx";
+import { search, browse } from "../../assets/svg.js";
 
 function Searchbar() {
   return (
