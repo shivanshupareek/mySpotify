@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "Satoshi Variable";
+  src: url("SatoshiVariable-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1.5rem;
+  padding-top: 1rem;
+}
+
+/*# sourceMappingURL=CenterControls.module.css.map */
