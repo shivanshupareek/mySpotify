@@ -19,12 +19,12 @@
   height: 100%;
 }
 .playbar_main .div_main .music_player {
-  width: 33%;
+  width: 30%;
   height: 100%;
   border: 1px solid #ffffff;
 }
 .playbar_main .div_main .music_controls {
-  width: 34%;
+  width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -40,7 +40,7 @@
   height: 50%;
 }
 .playbar_main .div_main .music_extras {
-  width: 33%;
+  width: 25%;
   height: 100%;
   border: 1px solid #ffffff;
 }

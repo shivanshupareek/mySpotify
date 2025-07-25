@@ -11,13 +11,13 @@
     height: 100%;
 
     .music_player{
-      width: 33%;
+      width: 30%;
       height: 100%;
       border: 1px solid #ffffff;
 
     }
     .music_controls{
-      width: 34%;
+      width: 40%;
       height: 100%;
       //border: 1px solid #ffffff;
       @include global.flex-center(flex, center, center, column);
@@ -36,7 +36,7 @@
     }
 
     .music_extras{
-      width: 33%;
+      width: 25%;
       height: 100%;
       border: 1px solid #ffffff;
 
