@@ -1,5 +1,6 @@
 import style from '../styles/Controller/Playbar.module.scss';
 import CenterControls from "../components/Controller/CenterControls.jsx";
+import Progressbar from "../components/Controller/Progressbar.jsx";
 
 function Playbar() {
 
@@ -10,6 +11,7 @@ function Playbar() {
                     <div className={style.music_player}></div>
                     <div className={style.music_controls}>
                         <CenterControls />
+                        <Progressbar />
                     </div>
                     <div className={style.music_extras}></div>
                 </div>

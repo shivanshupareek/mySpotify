@@ -1,0 +1,11 @@
+@use "../partials/global";
+
+.pbContainer{
+  .timeOver{}
+  .progressbar{
+    .progressbarBg{}
+    .progressbarFilled{}
+    .progressbarThumb{}
+  }
+  .timeLeft{}
+}
