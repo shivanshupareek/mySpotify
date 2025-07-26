@@ -8,7 +8,9 @@ import {
     volume_min,
     mute,
     mini_player,
-    fullScreen
+    fullScreen,
+    volume_medium,
+    volume_max
 } from "../../../public/assets/svg.js";
 import {useState, useRef, useEffect} from "react";
 
@@ -24,8 +26,44 @@ function MusicExtras() {
         setVolumeSlide(vol);
         if (audioRef.current) {
             audioRef.current.volume = vol / 100;
+            audioRef.current.muted = vol === 0;
         }
     }
+
+    function handleVolumeToggle() {
+         const audio = audioRef.current;
+
+         if (!audio) return
+
+        if (volume) {
+            setVolume(false);
+            if (audioRef.current) audioRef.current.muted = true;
+            if (audioRef.current.muted)  setVolumeSlide(0);
+        } else {
+            setVolume(true);
+            if ( !volume || volumeSlide === 0) {
+                const newVolume = 10;
+                setVolumeSlide(newVolume);
+                if (audioRef.current) audioRef.current.muted = false;
+                audioRef.current.volume = newVolume/ 100;
+            } else {
+               if (audioRef.current) audioRef.current.muted = false;
+            }
+        }
+    }
+
+    function volumeIcon () {
+        if (volumeSlide === 0 || !volume) return mute;
+        if (volumeSlide <= 30) return volume_min;
+        if(volumeSlide <= 70) return volume_medium;
+        return volume_max;
+    }
+
+    useEffect(() => {
+        if(audioRef.current) {
+            audioRef.current.volume = 0;
+        }
+    }, [])
 
     useEffect(() => {
         const audio = audioRef.current;
@@ -66,11 +104,11 @@ function MusicExtras() {
                     <IconFunction className="connectDeviceIcon" label="Connect to a device" path={connect_device} width={16} height={16} hColor={"#ffffff"} color={"#b3b3b3"}/>
                 </div>
                 <div className={style.volumeControl}>
-                    <div className={style.volume} onClick={() => {setVolume(p => !p)}} >
+                    <div className={style.volume} onClick={handleVolumeToggle} >
                         <IconFunction
                             className={volume ? "unmute" : "mute"}
                             label={volume ? "mute" : "Unmute"}
-                            path={volume ? volume_min : mute}
+                            path={volumeIcon()}
                             width={16}
                             height={16}
                             hColor={"#ffffff"}
@@ -78,7 +116,13 @@ function MusicExtras() {
                         />
                     </div>
                     <div className={style.volumeSliderWrapper}>
-                        <audio ref={audioRef} src="../../../public/assets/song.mp3" autoPlay controls={false}/>
+                        <audio
+                            ref={audioRef}
+                            src="/assets/song.mp3"
+                            autoPlay
+                            controls={true}
+                            muted = {!volume || volumeSlide === 0}
+                        />
                         <input
                             className={style.slider}
                             type="range"
