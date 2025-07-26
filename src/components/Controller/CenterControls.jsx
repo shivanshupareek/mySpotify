@@ -15,7 +15,7 @@ function CenterControls() {
                 <div className={style.playPause} onClick={() => {setPlay(prev => !prev)}}>
                     <IconFunction
                         className={play ? "play" : "pause"}
-                        label={play ? "Controller" : "Pause"}
+                        label={play ? "Play" : "Pause"}
                         path={play ? playbar_controls_play : playbar_controls_pause}
                         width={36}
                         height={36}

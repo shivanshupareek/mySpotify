@@ -1,10 +1,11 @@
 @use "../partials/global";
 
 .musicExtra{
-  @include global.flex-center(flex, center, center, row);
+  @include global.flex-center(flex, center, flex-end, row);
   width: 100%;
   height:100%;
-  gap: 1rem;
+  gap: 14px;
+  //padding: 1rem;
 
   .playingView{};
   .mike{};
@@ -22,7 +23,7 @@
       margin-bottom: 8px;
 
       .slider {
-        width: 8rem;
+        width: 6rem;
         height: 6px;
         appearance: none;
         border-radius: 3rem;
@@ -92,4 +93,7 @@
       .volumeText {};
     };
   }
+
+  .miniPlayer{};
+  .fullScreen{};
 };

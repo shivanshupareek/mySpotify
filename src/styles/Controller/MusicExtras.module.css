@@ -8,11 +8,11 @@
 .musicExtra {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: row;
   width: 100%;
   height: 100%;
-  gap: 1rem;
+  gap: 14px;
 }
 .musicExtra .volumeControl {
   display: flex;
@@ -26,7 +26,7 @@
   margin-bottom: 8px;
 }
 .musicExtra .volumeControl .volumeSliderWrapper .slider {
-  width: 8rem;
+  width: 6rem;
   height: 6px;
   appearance: none;
   border-radius: 3rem;
