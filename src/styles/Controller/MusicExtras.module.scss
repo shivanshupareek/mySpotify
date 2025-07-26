@@ -1,1 +1,98 @@
 @use "../partials/global";
+
+.musicExtra{
+  @include global.flex-center(flex, center, center, row);
+  width: 100%;
+  height:100%;
+  gap: 1rem;
+
+  .playingView{};
+  .mike{};
+  .queue{};
+  .connectDevice{};
+
+  .volumeControl {
+    @include global.flex-center(flex, center, center, row);
+    gap: 6px;
+    .volume {
+    };
+
+    .volumeSliderWrapper {
+      gap: 1rem;
+      margin-bottom: 8px;
+
+      .slider {
+        width: 8rem;
+        height: 6px;
+        appearance: none;
+        border-radius: 3rem;
+        background-color: #4d4d4c;
+        cursor: pointer;
+
+        &:hover {
+          &::-webkit-slider-thumb {
+            //visibility: visible;
+            opacity: 1;
+          }
+
+
+          &::-moz-range-thumb {
+            //visibility: visible;
+            opacity: 1;
+          }
+
+
+          &::-webkit-slider-runnable-track {
+            background: linear-gradient(
+                            to right,
+                            #1bd660 0%,
+                            #1bd660 var(--slider),
+                            #4d4d4c var(--slider),
+                            #4d4d4c 100%
+            );
+          }
+        }
+
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          height: 12px;
+          width: 12px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          //visibility: hidden;
+          margin-top: -3px;
+          opacity: 0;
+        }
+
+        &::-moz-range-thumb {
+          height: 12px;
+          width: 12px;
+          background-color: #ffffff;
+          border-radius: 50%;
+          visibility: hidden;
+        }
+
+        &::-webkit-slider-runnable-track {
+          width: 8rem;
+          height: 6px;
+          appearance: none;
+          border-radius: 3rem;
+          background: linear-gradient(
+                          to right,
+                          #ffffff 0%,
+                          #ffffff var(--slider),
+                          #4d4d4c var(--slider),
+                          #4d4d4c 100%
+          );
+        }
+      }
+    ;
+
+      .volumeText {
+      }
+    ;
+    }
+  ;
+  }
+};

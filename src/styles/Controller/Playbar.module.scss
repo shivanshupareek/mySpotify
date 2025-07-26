@@ -19,24 +19,11 @@
     .music_controls{
       width: 40%;
       height: 100%;
-      //border: 1px solid #ffffff;
       @include global.flex-center(flex, center, center, column);
-
-      .centerControls{
-        width: 100%;
-        height:50%;
-        //border: 1px solid #ffffff;
-      }
-
-      .progressbar{
-        width: 100%;
-        height:50%;
-        //border: 0.5px solid #ffffff;
-      }
     }
 
     .music_extras{
-      width: 25%;
+      width: 30%;
       height: 100%;
       border: 1px solid #ffffff;
 

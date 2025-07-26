@@ -5,5 +5,66 @@
   font-style: normal;
   font-display: swap;
 }
+.musicExtra {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  gap: 1rem;
+}
+.musicExtra .volumeControl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 6px;
+}
+.musicExtra .volumeControl .volumeSliderWrapper {
+  gap: 1rem;
+  margin-bottom: 8px;
+}
+.musicExtra .volumeControl .volumeSliderWrapper .slider {
+  width: 8rem;
+  height: 6px;
+  appearance: none;
+  border-radius: 3rem;
+  background-color: #4d4d4c;
+  cursor: pointer;
+}
+.musicExtra .volumeControl .volumeSliderWrapper .slider:hover::-webkit-slider-thumb {
+  opacity: 1;
+}
+.musicExtra .volumeControl .volumeSliderWrapper .slider:hover::-moz-range-thumb {
+  opacity: 1;
+}
+.musicExtra .volumeControl .volumeSliderWrapper .slider:hover::-webkit-slider-runnable-track {
+  background: linear-gradient(to right, #1bd660 0%, #1bd660 var(--slider), #4d4d4c var(--slider), #4d4d4c 100%);
+}
+.musicExtra .volumeControl .volumeSliderWrapper .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 12px;
+  width: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  margin-top: -3px;
+  opacity: 0;
+}
+.musicExtra .volumeControl .volumeSliderWrapper .slider::-moz-range-thumb {
+  height: 12px;
+  width: 12px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.musicExtra .volumeControl .volumeSliderWrapper .slider::-webkit-slider-runnable-track {
+  width: 8rem;
+  height: 6px;
+  appearance: none;
+  border-radius: 3rem;
+  background: linear-gradient(to right, #ffffff 0%, #ffffff var(--slider), #4d4d4c var(--slider), #4d4d4c 100%);
+}
 
 /*# sourceMappingURL=MusicExtras.module.css.map */

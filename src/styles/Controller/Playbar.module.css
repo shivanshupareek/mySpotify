@@ -31,16 +31,8 @@
   justify-content: center;
   flex-direction: column;
 }
-.playbar_main .div_main .music_controls .centerControls {
-  width: 100%;
-  height: 50%;
-}
-.playbar_main .div_main .music_controls .progressbar {
-  width: 100%;
-  height: 50%;
-}
 .playbar_main .div_main .music_extras {
-  width: 25%;
+  width: 30%;
   height: 100%;
   border: 1px solid #ffffff;
 }
