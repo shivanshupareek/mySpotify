@@ -1,5 +1,5 @@
 
-import {shuffle,previous, next, playbar_controls_play, playbar_controls_pause, repeat} from "../../assets/svg.js";
+import {shuffle,previous, next, playbar_controls_play, playbar_controls_pause, repeat} from "../../../public/assets/svg.js";
 import {useState} from "react";
 import IconFunction from "../../logic/IconFunction.jsx"
 import style from "../../styles/Controller/CenterControls.module.scss";

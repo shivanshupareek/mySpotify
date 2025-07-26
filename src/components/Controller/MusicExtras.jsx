@@ -7,16 +7,21 @@ import {
     connect_device,
     volume_min,
     mute
-} from "../../assets/svg.js";
-import {useState} from "react";
+} from "../../../public/assets/svg.js";
+import {useState, useRef} from "react";
 
 function MusicExtras() {
 
+    const audioRef = useRef(null);
     const [volume, setVolume] = useState(true);
     const [volumeSlide, setVolumeSlide] = useState(50);
 
     function handleVolumeSlide(e) {
-        setVolumeSlide(Number(e.target.value));
+        const vol = Number(e.target.value);
+        setVolumeSlide(vol);
+        if (audioRef.current) {
+            audioRef.current.volume = vol / 100;
+        }
     }
 
     return (
@@ -47,16 +52,17 @@ function MusicExtras() {
                         />
                     </div>
                     <div className={style.volumeSliderWrapper}>
+                        <audio ref={audioRef} src="../../../public/assets/song.mp3" autoPlay controls={false} />
                         <input
                             className={style.slider}
                             type="range"
                             value={volumeSlide}
-                            onClick={handleVolumeSlide}
+                            onChange={handleVolumeSlide}
                             min="0"
                             max="100"
                             style={{"--slider": `${volumeSlide}%`}}
                         />
-                        <span className="volumeText">{volumeSlide}%</span>
+                        {/*<span className="volumeText">{volumeSlide}%</span>*/}
                     </div>
                 </div>
             </div>
