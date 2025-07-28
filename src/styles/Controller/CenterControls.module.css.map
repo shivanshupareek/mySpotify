@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../partials/_fonts.scss","CenterControls.module.scss","../partials/_mixins.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;;ACHJ;ECgBE,SDf4B;ECgB5B,aDhBkC;ECiBlC,iBDjB0C;ECkB1C,gBDlBkD;EAClD;EACA","file":"CenterControls.module.css"}
+{"version":3,"sourceRoot":"","sources":["../partials/_fonts.scss","CenterControls.module.scss","../partials/_mixins.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;EACA;EACA;;ACHJ;ECgBE,SDf4B;ECgB5B,aDhBkC;ECiBlC,iBDjB0C;ECkB1C,gBDlBkD;EAClD","file":"CenterControls.module.css"}

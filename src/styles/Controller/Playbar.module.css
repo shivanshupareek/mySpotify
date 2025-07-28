@@ -7,7 +7,8 @@
 }
 .playbar_main {
   width: 100%;
-  height: 6rem;
+  height: 4.5rem;
+  padding-top: 8px;
 }
 .playbar_main .div_main {
   display: flex;

@@ -10,4 +10,29 @@
   color: aliceblue;
 }
 
+.main {
+  display: grid;
+  height: 98vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 3rem 1fr 5rem;
+  grid-template-areas: "header header" "aside main" "footer footer";
+  grid-gap: 12px;
+}
+.main .navbar {
+  grid-area: header;
+}
+.main .library {
+  grid-area: aside;
+  background-color: #121212;
+  border-radius: 12px;
+}
+.main .view {
+  grid-area: main;
+  background: linear-gradient(#222222 0%, #121212 50%, #121212 100%);
+  border-radius: 12px;
+}
+.main .playbar {
+  grid-area: footer;
+}
+
 /*# sourceMappingURL=App.module.css.map */

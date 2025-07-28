@@ -5,7 +5,7 @@ function View () {
         <>
         <main className={style.view_main}>
             <div className={style.div_main}>
-                <h1>This is the main view</h1>
+                {/*<h1>This is the main view</h1>*/}
             </div>
         </main>
         </>

@@ -3,7 +3,6 @@
 .controls{
   @include global.flex-center(flex, center, center, row);
   gap: 1.5rem;
-  padding-top: 1rem;
 
   .shuffle{}
   .previous{}
