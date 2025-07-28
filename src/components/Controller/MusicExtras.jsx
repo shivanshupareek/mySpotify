@@ -11,16 +11,17 @@ import {
     fullScreen,
     volume_medium,
     volume_max
-} from "../../../public/assets/svg.js";
+} from "../../../public/assets/svg.js"; //imports the paths for the svgs
 import {useState, useRef, useEffect} from "react";
 
 function MusicExtras() {
 
-    const audioRef = useRef(null);
-    const [isPlaying, setIsPlaying] = useState(false);
-    const [volume, setVolume] = useState(true);
-    const [volumeSlide, setVolumeSlide] = useState(0);
+    const audioRef = useRef(null);                     //for audio to not render on every state update
+    const [isPlaying, setIsPlaying] = useState(false); //for playing view icon
+    const [volume, setVolume] = useState(true);        //for volume
+    const [volumeSlide, setVolumeSlide] = useState(0); //for slider
 
+//this function handles the volume of the volume slider
     function handleVolumeSlide(e) {
         const vol = Number(e.target.value);
         setVolumeSlide(vol);
@@ -30,6 +31,7 @@ function MusicExtras() {
         }
     }
 
+//this toggle function is for volume mute & unmute icon.
     function handleVolumeToggle() {
          const audio = audioRef.current;
 
@@ -52,6 +54,7 @@ function MusicExtras() {
         }
     }
 
+//this function is to render the correct path based on the volume on the slider.
     function volumeIcon () {
         if (volumeSlide === 0 || !volume) return mute;
         if (volumeSlide <= 30) return volume_min;
@@ -59,12 +62,18 @@ function MusicExtras() {
         return volume_max;
     }
 
+/*
+this useEffect() is to sync the audio's volume with the 
+initial state during the mounting phase
+*/
     useEffect(() => {
         if(audioRef.current) {
             audioRef.current.volume = 0;
         }
     }, [])
 
+
+//this useEffect() is for the playing view icon to change color when there is a song being played.
     useEffect(() => {
         const audio = audioRef.current;
         if (!audio) return "";
