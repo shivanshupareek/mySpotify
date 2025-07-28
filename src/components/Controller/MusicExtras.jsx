@@ -62,10 +62,8 @@ function MusicExtras() {
         return volume_max;
     }
 
-/*
-this useEffect() is to sync the audio's volume with the 
-initial state during the mounting phase
-*/
+
+//this useEffect() is to sync the audio's volume with the initial state during the mounting phase.
     useEffect(() => {
         if(audioRef.current) {
             audioRef.current.volume = 0;
