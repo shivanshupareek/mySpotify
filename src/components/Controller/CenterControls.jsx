@@ -4,7 +4,7 @@ import {useState} from "react";
 import IconFunction from "../../logic/IconFunction.jsx"
 import style from "../../styles/Controller/CenterControls.module.scss";
 
-function CenterControls() {
+function CenterControls({  isPlaying, isEnabled }) {
     const [play, setPlay] = useState(false)
 
     return (
