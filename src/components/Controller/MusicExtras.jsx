@@ -16,7 +16,7 @@ import {useState, useRef, useEffect} from "react";
 
 function MusicExtras() {
 
-    const audioRef = useRef(null);                     //for audio to not render on every state update
+    const audioRef = useRef(null);              //for audio to not render on every state update
     const [isPlaying, setIsPlaying] = useState(false); //for playing view icon
     const [volume, setVolume] = useState(true);        //for volume
     const [volumeSlide, setVolumeSlide] = useState(0); //for slider
@@ -31,7 +31,7 @@ function MusicExtras() {
         }
     }
 
-//this toggle function is for volume mute & unmute icon.
+//this toggle function is for volume mute and unmute icon.
     function handleVolumeToggle() {
          const audio = audioRef.current;
 
@@ -127,7 +127,7 @@ function MusicExtras() {
                             ref={audioRef}
                             src="/assets/song.mp3"
                             autoPlay
-                            controls={true}
+                            controls={false}
                             muted = {!volume || volumeSlide === 0}
                         />
                         <input
