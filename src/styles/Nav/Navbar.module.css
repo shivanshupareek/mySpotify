@@ -5,6 +5,14 @@
   font-style: normal;
   font-display: swap;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+}
+
 .nav {
   padding: 8px;
   margin: -8px;
@@ -16,4 +24,4 @@
   flex-direction: row;
 }
 
-/*# sourceMappingURL=Nav.module.css.map */
+/*# sourceMappingURL=Navbar.module.css.map */

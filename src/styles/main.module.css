@@ -13,10 +13,6 @@ html, body {
   background-color: black;
 }
 
-:root {
-  background-color: black;
-}
-
 .main {
   display: grid;
   height: 100vh;
@@ -61,4 +57,4 @@ html, body {
   grid-area: footer;
 }
 
-/*# sourceMappingURL=App.module.css.map */
+/*# sourceMappingURL=main.module.css.map */

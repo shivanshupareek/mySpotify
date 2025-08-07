@@ -2,6 +2,7 @@ import style from '../styles/Controller/Playbar.module.scss';
 import MusicControls from "../components/Controller/MusicControls.jsx";
 import MusicPlayer from "../components/Controller/MusicPlayer.jsx";
 import MusicExtras from "../components/Controller/MusicExtras.jsx";
+import song from "/assets/song.mp3";
 
 function Playbar() {
 
@@ -10,13 +11,13 @@ function Playbar() {
             <footer className={style.playbar_main}>
                 <div className={style.div_main}>
                     <div className={style.music_player}>
-                        <MusicPlayer />
+                        <MusicPlayer song={song} />
                     </div>
                     <div className={style.music_controls}>
-                        <MusicControls />
+                        <MusicControls song={song} />
                     </div>
                     <div className={style.music_extras}>
-                        <MusicExtras />
+                        <MusicExtras song={song}/>
                     </div>
                 </div>
             </footer>

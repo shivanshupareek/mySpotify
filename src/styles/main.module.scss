@@ -1,8 +1,4 @@
-@use "./partials/global";
-
-:root {
-  background-color: black;
-}
+@use './partials/global';
 
 .main{
   display: grid;
@@ -49,10 +45,10 @@
   .view{
     grid-area: main;
     background: linear-gradient(
-    #222222 0%,
-    #121212 50%,
-    #121212 100%
-  );
+                    #222222 0%,
+                    #121212 50%,
+                    #121212 100%
+    );
     border-radius: 12px;
   }
   .playbar{

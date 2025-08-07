@@ -14,7 +14,7 @@ import {
 } from "../../../public/assets/svg.js"; //imports the paths for the svgs
 import {useState, useRef, useEffect} from "react";
 
-function MusicExtras() {
+function MusicExtras({ song }) {
 
     const audioRef = useRef(null);              //for audio to not render on every state update
     const [isPlaying, setIsPlaying] = useState(false); //for playing view icon
@@ -125,7 +125,7 @@ function MusicExtras() {
                     <div className={style.volumeSliderWrapper}>
                         <audio
                             ref={audioRef}
-                            src="/assets/song.mp3"
+                            src={song}
                             autoPlay
                             controls={false}
                             muted = {!volume || volumeSlide === 0}
