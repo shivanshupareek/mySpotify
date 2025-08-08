@@ -12,10 +12,12 @@ import {
     volume_medium,
     volume_max
 } from "../../../public/assets/svg.js"; //imports the paths for the svgs
-import {useState, useRef, useEffect} from "react";
+import {useState, useRef, useEffect, useContext} from "react";
+import { SongContext } from "../../hooks/songContext.jsx";
 
-function MusicExtras({ song }) {
+function MusicExtras() {
 
+    const {song} = useContext(SongContext);
     const audioRef = useRef(null);              //for audio to not render on every state update
     const [isPlaying, setIsPlaying] = useState(false); //for playing view icon
     const [volume, setVolume] = useState(true);        //for volume

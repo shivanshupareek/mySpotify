@@ -1,16 +1,23 @@
-import {createContext, useState} from "react";
+import { createContext } from "react";
+import songFile from "../../public/assets/song.mp3";
 
-export const  SongContext = createContext(null)
+export const SongContext = createContext({
+    song: songFile,
+});
 
-export function SongProvider({ children }) {
-    const [song, setSong] = useState(null);
+const SongProvider = ({ children }) => {
+
+    const song = songFile
 
     return (
         <>
-            <SongContext.Provider value={{ song, setSong }}>
+            <SongContext.Provider value={{ song }} >
                 {children}
             </SongContext.Provider>
+
         </>
     )
+
 }
 
+export default SongProvider;

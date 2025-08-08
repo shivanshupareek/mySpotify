@@ -2,16 +2,16 @@ import style from "../../styles/Controller/MusicControls.module.scss";
 import Progressbar from "./Progressbar.jsx";
 import CenterControls from "./CenterControls.jsx";
 
-function MusicControls({ song }) {
+function MusicControls() {
     
     return (
         <>
             <div className={style.music_controls}>
                 <div className={style.centerControls}>
-                    <CenterControls song={song} />
+                    <CenterControls />
                 </div>
                 <div className={style.progressbar}>
-                    <Progressbar song={song} />
+                    <Progressbar />
                 </div>
             </div>
         </>
