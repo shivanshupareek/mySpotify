@@ -1,5 +1,7 @@
 import style from "../../styles/Controller/MusicExtras.module.scss";
 import IconFunction from "../../logic/IconFunction.jsx";
+import {useState, useRef, useEffect, useContext} from "react";
+import { SongContext } from "../../hooks/songContext.jsx";
 import {
     playing_view,
     mike,
@@ -12,12 +14,11 @@ import {
     volume_medium,
     volume_max
 } from "../../../public/assets/svg.js"; //imports the paths for the svgs
-import {useState, useRef, useEffect, useContext} from "react";
-import { SongContext } from "../../hooks/songContext.jsx";
 
 function MusicExtras() {
 
-    const {song} = useContext(SongContext);
+    const {song} = useContext(SongContext); //imports the song file using context API from songContext.jsx hook
+
     const audioRef = useRef(null);              //for audio to not render on every state update
     const [isPlaying, setIsPlaying] = useState(false); //for playing view icon
     const [volume, setVolume] = useState(true);        //for volume
@@ -125,9 +126,9 @@ function MusicExtras() {
                         />
                     </div>
                     <div className={style.volumeSliderWrapper}>
-                        <audio
+                        <audio //this is the audio file which has the music being controlled by ref to not rerender on every state update
                             ref={audioRef}
-                            src={song}
+                            src={song ?? undefined}
                             autoPlay
                             controls={false}
                             muted = {!volume || volumeSlide === 0}
@@ -141,7 +142,6 @@ function MusicExtras() {
                             max="100"
                             style={{"--slider": `${volumeSlide}%`}}
                         />
-                        {/*<span className="volumeText">{volumeSlide}%</span>*/}
                     </div>
                 </div>
                 <div className={style.miniPlayer}>

@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import {createContext, useState} from "react";
 import songFile from "../../public/assets/song.mp3";
 
 export const SongContext = createContext({
@@ -7,11 +7,12 @@ export const SongContext = createContext({
 
 const SongProvider = ({ children }) => {
 
-    const song = songFile
+    const [song, setSong] = useState('');
+    // const song = songFile
 
     return (
         <>
-            <SongContext.Provider value={{ song }} >
+            <SongContext.Provider value={{ song, setSong }} >
                 {children}
             </SongContext.Provider>
 
