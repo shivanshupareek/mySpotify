@@ -32,7 +32,7 @@ const SongProvider = ({ children }) => {
             play, setPlay,
             isResizingRef, sidebarRef
     }),
-        [song, isPlaying, volume, play]
+        [song, isPlaying, volume, play, volumeSlide]
     );
 
     return (
