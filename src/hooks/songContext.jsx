@@ -21,6 +21,7 @@ const SongProvider = ({ children }) => {
     const isResizingRef = useRef(false); //this is for the responsive value
     const sidebarRef = useRef(null);        //this is for ref state of the library
 
+    //useMemo is being used from re-rendering states which have no updates to save unnecessary re-renders
     const data = useMemo( //used memo for caching as a lot of data is being computed in a single render
         () => ({
             song, setSong,
