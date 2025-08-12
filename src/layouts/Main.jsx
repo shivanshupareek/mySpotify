@@ -3,12 +3,12 @@ import Navbar from "../layouts/Navbar.jsx";
 import Library from "../layouts/Library.jsx";
 import View from "../layouts/View.jsx";
 import Playbar from "../layouts/Playbar.jsx";
-import { useRef } from "react";
+import { useContext } from "react";
+import { SongContext } from "../hooks/songContext.jsx";
 
 export default function Main () {
 
-    const isResizingRef = useRef(false); //this is for the responsive value
-    const sidebarRef = useRef(null);        //this is for ref state of the library
+    const { isResizingRef, sidebarRef } =  useContext(SongContext);
 
     const startResizing = () => {
         isResizingRef.current = true;

@@ -1,6 +1,6 @@
 import style from "../../styles/Controller/MusicExtras.module.scss";
 import IconFunction from "../../logic/IconFunction.jsx";
-import {useState, useRef, useEffect, useContext} from "react";
+import {useEffect, useContext} from "react";
 import { SongContext } from "../../hooks/songContext.jsx";
 import {
     playing_view,
@@ -17,14 +17,17 @@ import {
 
 function MusicExtras() {
 
-    const {song} = useContext(SongContext); //imports the song file using context API from songContext.jsx hook
+    const {
+        song,
+        audioRef,
+        isPlaying,
+        setIsPlaying,
+        volume,
+        setVolume,
+        volumeSlide,
+        setVolumeSlide
+    } = useContext(SongContext); //imports the song file using context API from songContext.jsx hook
 
-    const audioRef = useRef(null);              //for audio to not render on every state update
-    const [isPlaying, setIsPlaying] = useState(false); //for playing view icon
-    const [volume, setVolume] = useState(true);        //for volume
-    const [volumeSlide, setVolumeSlide] = useState(0); //for slider
-
-//this function handles the volume of the volume slider
     function handleVolumeSlide(e) {
         const vol = Number(e.target.value);
         setVolumeSlide(vol);
@@ -130,7 +133,7 @@ function MusicExtras() {
                             ref={audioRef}
                             src={song ?? undefined}
                             autoPlay
-                            controls={false}
+                            controls={true}
                             muted = {!volume || volumeSlide === 0}
                         />
                         <input

@@ -1,11 +1,13 @@
 
 import {shuffle,previous, next, playbar_controls_play, playbar_controls_pause, repeat} from "../../../public/assets/svg.js";
-import {useState} from "react";
+import {useContext} from "react";
+import {SongContext} from "../../hooks/songContext.jsx";
 import IconFunction from "../../logic/IconFunction.jsx"
 import style from "../../styles/Controller/CenterControls.module.scss";
 
 function CenterControls() {
-    const [play, setPlay] = useState(false)
+
+        const { play, setPlay } = useContext(SongContext);
 
     return (
         <>
