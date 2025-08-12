@@ -1,11 +1,12 @@
-import {createContext, useRef, useState} from "react";
+import {createContext, useRef, useState, useMemo} from "react";
 // import songFile from "../../public/assets/song.mp3";
 
-export const SongContext = createContext("");
+export const SongContext = createContext(undefined);
 
 const SongProvider = ({ children }) => {
 
-    const [song, setSong] = useState("/assets/song.mp3");
+    const songFile = "/assets/song.mp3"
+    const [song, setSong] = useState(songFile);
 
     //this is for MusicExtra.jsx
     const audioRef = useRef(null);              //for audio to not render on every state update
@@ -20,24 +21,22 @@ const SongProvider = ({ children }) => {
     const isResizingRef = useRef(false); //this is for the responsive value
     const sidebarRef = useRef(null);        //this is for ref state of the library
 
+    const data = useMemo( //used memo for caching as a lot of data is being computed in a single render
+        () => ({
+            song, setSong,
+            audioRef,
+            isPlaying, setIsPlaying,
+            volume, setVolume,
+            volumeSlide, setVolumeSlide,
+            play, setPlay,
+            isResizingRef, sidebarRef
+    }),
+        [song, isPlaying, volume, play]
+    );
 
     return (
         <>
-            <SongContext.Provider value={{
-                song,
-                setSong,
-                audioRef,
-                isPlaying,
-                setIsPlaying,
-                volume,
-                setVolume,
-                volumeSlide,
-                setVolumeSlide,
-                play,
-                setPlay,
-                isResizingRef,
-                sidebarRef,
-            }} >
+            <SongContext.Provider value={data}>
                 {children}
             </SongContext.Provider>
 
