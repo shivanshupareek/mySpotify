@@ -1,7 +1,7 @@
 import style from "../../styles/Controller/MusicExtras.module.scss";
 import IconFunction from "../../logic/IconFunction.jsx";
 import {useEffect, useContext} from "react";
-import { SongContext } from "../../hooks/songContext.jsx";
+import { SongContext } from "../../context/SongContext.jsx";
 import {
     playing_view,
     mike,
@@ -26,7 +26,7 @@ function MusicExtras() {
         setVolume,
         volumeSlide,
         setVolumeSlide
-    } = useContext(SongContext); //imports the song file using context API from songContext.jsx hook
+    } = useContext(SongContext); //imports the song file using context API from SongContext.jsx hook
 
     function handleVolumeSlide(e) {
         const vol = Number(e.target.value);
@@ -133,7 +133,7 @@ function MusicExtras() {
                             ref={audioRef}
                             src={song ?? undefined}
                             autoPlay
-                            controls={true}
+                            controls={false}
                             muted = {!volume || volumeSlide === 0}
                         />
                         <input

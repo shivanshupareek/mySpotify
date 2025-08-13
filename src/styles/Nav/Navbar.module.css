@@ -13,11 +13,11 @@ html, body {
   background-color: black;
 }
 
-.nav {
+.header .nav {
   padding: 8px;
   margin: -8px;
 }
-.nav .main .section {
+.header .nav .main .section {
   display: flex;
   align-items: center;
   justify-content: space-between;

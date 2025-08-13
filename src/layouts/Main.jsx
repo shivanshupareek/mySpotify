@@ -4,7 +4,7 @@ import Library from "../layouts/Library.jsx";
 import View from "../layouts/View.jsx";
 import Playbar from "../layouts/Playbar.jsx";
 import { useContext } from "react";
-import { SongContext } from "../hooks/songContext.jsx";
+import { SongContext } from "../context/SongContext.jsx";
 
 export default function Main () {
 

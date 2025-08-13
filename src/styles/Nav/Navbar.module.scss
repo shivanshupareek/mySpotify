@@ -1,11 +1,14 @@
 @use "../partials/global";
 
-.nav {
-  padding: 8px;
-  margin: -8px;
-  .main {
-    .section {
-      @include global.flex-center(flex, center, space-between, row);
+.header {
+  .nav {
+    padding: 8px;
+    margin: -8px;
+
+    .main {
+      .section {
+        @include global.flex-center(flex, center, space-between, row);
+      }
     }
   }
 }

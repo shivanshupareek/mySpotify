@@ -6,15 +6,17 @@ import NavEnd from "../components/Nav/NavEnd.jsx";
 function Navbar() {
   return (
     <>
-      <nav className={style.nav}>
-        <main className={style.main}>
-          <section className={style.section}>
-            <NavIcon />
-            <NavCentre />
-            <NavEnd />
-          </section>
-        </main>
-      </nav>
+        <header className={style.header}>
+          <nav className={style.nav}>
+            <main className={style.main}>
+              <section className={style.section}>
+                <NavIcon />
+                <NavCentre />
+                <NavEnd />
+              </section>
+            </main>
+          </nav>
+        </header>
     </>
   );
 }
