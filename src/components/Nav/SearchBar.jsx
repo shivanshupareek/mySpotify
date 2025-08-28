@@ -1,6 +1,5 @@
 import style from "../../styles/Nav/SearchBar.module.scss";
-import Tooltip from "../../logic/Tooltip.jsx";
-import Icon from "../../logic/Icon.jsx";
+import IconFunction from "../../logic/IconFunction.jsx";
 import { search, browse } from "../../../public/assets/svg.js";
 
 function Searchbar() {
@@ -15,15 +14,10 @@ function Searchbar() {
           placeholder="What do you want to play?"
         />
         <div className={style.searchIcon}>
-          <Tooltip label="Search">
-            <Icon path={search} width={22} height={22} color="#B3B3B3" />
-          </Tooltip>
+            <IconFunction  label={"Search"} path={search} width={22} height={22} color={"#B3B3B3"} />
         </div>
-
         <div className={style.browseIcon}>
-          <Tooltip label="Browse">
-            <Icon path={browse} width={24} height={24} color="#B3B3B3" />
-          </Tooltip>
+            <IconFunction label={"Browse"} path={browse} width={24} height={24} color="#B3B3B3" />
         </div>
       </main>
     </>

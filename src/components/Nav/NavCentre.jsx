@@ -1,7 +1,6 @@
 import style from "../../styles/Nav/NavCentre.module.scss";
-import Tooltip from "../../logic/Tooltip.jsx";
-import Icon from "../../logic/Icon.jsx";
 import { home } from "../../../public/assets/svg.js";
+import IconFunction from "../../logic/IconFunction.jsx";
 import Searchbar from "./SearchBar.jsx";
 
 function NavCentre() {
@@ -9,17 +8,11 @@ function NavCentre() {
     <>
       <main className={style.navCentreMain}>
         <div className={style.homeIcon}>
-          <Tooltip label="Home">
-            <div className={style.homeIcon}>
-              <Icon path={home} width={22} height={24} color="#ffffff" />
-            </div>
-          </Tooltip>
+            <IconFunction label={"Home"} path={home} width={22} height={22} color="#ffffff" />
         </div>
         <div className={style.searchbar}>
           <Searchbar />
         </div>
-
-        {/*<section className={style.search}></section>*/}
       </main>
     </>
   );

@@ -21,6 +21,14 @@ const SongProvider = ({ children }) => {
     const isResizingRef = useRef(false); //this is for the responsive value
     const sidebarRef = useRef(null);        //this is for ref state of the library
 
+    //this is for NavEnd.jsx
+    const [onInstallHover, setOnInstallHover] = useState(false);
+
+    //this is for IconFunction.jsx
+    const [isHover, setIsHover] = useState(false);
+
+
+
     //useMemo is being used from re-rendering states which have no updates to save unnecessary re-renders
     const data = useMemo( //used memo for caching as a lot of data is being computed in a single render
         () => ({
@@ -30,7 +38,9 @@ const SongProvider = ({ children }) => {
             volume, setVolume,
             volumeSlide, setVolumeSlide,
             play, setPlay,
-            isResizingRef, sidebarRef
+            isResizingRef, sidebarRef,
+            onInstallHover, setOnInstallHover,
+            isHover, setIsHover,
     }),
         [song, isPlaying, volume, play, volumeSlide]
     );

@@ -25,17 +25,10 @@
     }
   }
 
-  .notifyIcon {
-    @include global.flex-center(flex, center, center, row);
+  .notifyIcon, .accountIcon, .accountIcon {
     @include global.iconHover(1.05, #ffffff);
   }
-
-  .activityIcon {
-    @include global.iconHover(1.05, #ffffff);
-  }
-
   .accountIcon {
     @include global.icon-bg;
-    @include global.iconHover(1.05, #ffffff);
   }
 }

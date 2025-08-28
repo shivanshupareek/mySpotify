@@ -1,7 +1,8 @@
 import style from "../styles/Logic/IconFunction.module.scss"
-import {useState} from "react";
+import {useContext} from "react";
 import Icon from "./Icon.jsx";
 import Tooltip from "./Tooltip.jsx";
+import {SongContext} from "../context/SongContext.jsx";
 
 function IconFunction({
                           label,
@@ -14,8 +15,7 @@ function IconFunction({
                           className,
                         }) {
 
-    const [isHover, setIsHover] = useState(false);
-
+    const {isHover, setIsHover} = useContext(SongContext);
     return (
         <>
             <div

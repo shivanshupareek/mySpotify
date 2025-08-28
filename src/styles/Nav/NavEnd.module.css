@@ -50,18 +50,7 @@ html, body {
   letter-spacing: 0.5px;
   color: #b3b3b3;
 }
-.main .notifyIcon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-}
-.main .notifyIcon:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  color: #ffffff;
-}
-.main .activityIcon:hover {
+.main .notifyIcon:hover, .main .accountIcon:hover, .main .accountIcon:hover {
   cursor: pointer;
   transform: scale(1.05);
   color: #ffffff;
@@ -80,11 +69,6 @@ html, body {
   transform: scale(1.05);
   background-color: #2a2a2a;
   cursor: pointer;
-}
-.main .accountIcon:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  color: #ffffff;
 }
 
 /*# sourceMappingURL=NavEnd.module.css.map */
