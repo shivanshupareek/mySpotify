@@ -5,27 +5,30 @@ export const SongContext = createContext(undefined);
 const SongProvider = ({ children }) => {
 
     const songFile = "/assets/song.mp3"
-    const [song, setSong] = useState(songFile);
+    const [song, setSong] = useState(songFile); //For the song which is being used as a default
 
-    //this is for MusicExtra.jsx
-    const audioRef = useRef(null);              //for audio to not render on every state update
-    const [isPlaying, setIsPlaying] = useState(false); //for playing view icon
-    const [volume, setVolume] = useState(true);        //for volume
+    //For MusicExtra.jsx
+    const audioRef = useRef(null);              //For audio to not render on every state update
+    const [isPlaying, setIsPlaying] = useState(false); //For playing view icon
+    const [volume, setVolume] = useState(true);        //For volume
     const [volumeSlide, setVolumeSlide] = useState(0); //this function handles the volume of the volume slider
 
-    //this is for CenterControls.jsx
+    //For CenterControls.jsx
     const [play, setPlay] = useState(false); //for play pause toggle button
 
-    //this is for Main.jsx
-    const isResizingRef = useRef(false); //this is for the responsive value
-    const sidebarRef = useRef(null);        //this is for ref state of the library
+    //For Main.jsx
+    const isResizingRef = useRef(false); //For the responsive value
+    const sidebarRef = useRef(null);        //For ref state of the library
 
-    //this is for NavEnd.jsx
+    //For NavEnd.jsx
     const [onInstallHover, setOnInstallHover] = useState(false);
 
-    //this is for IconFunction.jsx
+    //For IconFunction.jsx
     const [isHover, setIsHover] = useState(false);
 
+    //For CenterControls.jsx
+    const [currentTrackTime, setCurrentTrackTime] = useState(0);
+    const [trackSlider, setTrackSlider] = useState(0);
 
 
     //useMemo is being used from re-rendering states which have no updates to save unnecessary re-renders
@@ -40,6 +43,8 @@ const SongProvider = ({ children }) => {
             isResizingRef, sidebarRef,
             onInstallHover, setOnInstallHover,
             isHover, setIsHover,
+            currentTrackTime, setCurrentTrackTime,
+            trackSlider, setTrackSlider,
     }),
         [song, isPlaying, volume, play, volumeSlide]
     );

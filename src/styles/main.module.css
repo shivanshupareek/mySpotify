@@ -22,6 +22,8 @@ html, body {
   grid-template-areas: "header header header" "aside resizer main" "footer footer footer";
   row-gap: 12px;
   column-gap: 4px;
+  overflow: hidden;
+  overflow-scrolling: auto;
 }
 .main .navbar {
   grid-area: header;

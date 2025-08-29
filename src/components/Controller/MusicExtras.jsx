@@ -128,7 +128,7 @@ function MusicExtras() {
                             color={"#b3b3b3"}
                         />
                     </div>
-                    <div className={style.volumeSliderWrapper}>
+                    <div className={style.sliderWrapper}>
                         <AudioPlayback />
                         <input
                             className={style.slider}

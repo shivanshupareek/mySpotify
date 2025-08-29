@@ -17,7 +17,7 @@
     .volume {
     };
 
-    .volumeSliderWrapper {
+    .sliderWrapper {
       gap: 1rem;
       margin-bottom: 8px;
 
@@ -31,13 +31,11 @@
 
         &:hover {
           &::-webkit-slider-thumb {
-            //visibility: visible;
             opacity: 1;
           }
 
 
           &::-moz-range-thumb {
-            //visibility: visible;
             opacity: 1;
           }
 
@@ -60,7 +58,6 @@
           width: 12px;
           background-color: #ffffff;
           border-radius: 50%;
-          //visibility: hidden;
           margin-top: -3px;
           opacity: 0;
         }

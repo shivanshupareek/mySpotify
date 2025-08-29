@@ -7,7 +7,11 @@ import style from "../../styles/Controller/CenterControls.module.scss";
 
 function CenterControls() {
 
-        const { play, setPlay } = useContext(SongContext);
+        const {
+            play, setPlay,
+            // currentTrackTime, setCurrentTrackTime,
+            // trackSlider, setTrackSlider,
+        } = useContext(SongContext);
 
     return (
         <>

@@ -14,7 +14,7 @@ function AudioPlayback () {
                 ref={audioRef}
                 src={song ?? undefined}
                 autoPlay
-                controls={false}
+                controls={true}
                 muted = {!volume || volumeSlide === 0}
             />
         </div>
