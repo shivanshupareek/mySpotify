@@ -1,5 +1,6 @@
 import style from "../../styles/Controller/MusicExtras.module.scss";
 import IconFunction from "../../logic/IconFunction.jsx";
+import AudioPlayback from "../../logic/AudioPlayback.jsx";
 import {useEffect, useContext} from "react";
 import { SongContext } from "../../context/SongContext.jsx";
 import {
@@ -18,7 +19,7 @@ import {
 function MusicExtras() {
 
     const {
-        song,
+        // song,
         audioRef,
         isPlaying,
         setIsPlaying,
@@ -129,13 +130,14 @@ function MusicExtras() {
                         />
                     </div>
                     <div className={style.volumeSliderWrapper}>
-                        <audio //this is the audio file which has the music being controlled by ref to not rerender on every state update
-                            ref={audioRef}
-                            src={song ?? undefined}
-                            autoPlay
-                            controls={false}
-                            muted = {!volume || volumeSlide === 0}
-                        />
+                        {/*<audio //this is the audio file which has the music being controlled by ref to not rerender on every state update*/}
+                        {/*    ref={audioRef}*/}
+                        {/*    src={song ?? undefined}*/}
+                        {/*    autoPlay*/}
+                        {/*    controls={false}*/}
+                        {/*    muted = {!volume || volumeSlide === 0}*/}
+                        {/*/>*/}
+                        <AudioPlayback />
                         <input
                             className={style.slider}
                             type="range"
